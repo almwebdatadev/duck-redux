@@ -9,6 +9,12 @@ class Freezer extends Component {
   state = {
     flavors: store.getState().freezer.icecreams
   }
+  componentDidMount(){
+    store.subscribe(() =>
+    this.setState({
+      flavors: store.getState().freezer.icecreams
+    }))
+  }
   render() {
     console.log(this.state);
     const flavors = this.state.flavors;

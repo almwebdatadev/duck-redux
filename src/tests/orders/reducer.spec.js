@@ -2,7 +2,7 @@ import reducer, { actions } from "../../ducks/orders";
 
 describe('orders reducer', () => {
 
-    xit('should place a new order', () => {
+    it('should place a new order', () => {
         const newState = reducer(undefined, actions.placeOrder({
             customer: 'Carpanta_test_name',
             cone: false,
