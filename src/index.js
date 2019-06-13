@@ -1,7 +1,3 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -11,13 +7,19 @@
 // // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App/App';
 import store from "./store";
-import * as flavors from "./constants/icecreams_flavors";
-import {actions} from "./ducks/freezer";
+// import * as flavors from "./constants/icecreams_flavors";
+import {actions /*as actionsFreezer*/} from "./ducks/freezer";
+//import {actions as actionsOrders} from "./ducks/orders";
 
+
+ReactDOM.render(<App />, document.getElementById('root'));
 console.log(store.getState());
 
 store.subscribe( () => console.log(store.getState()));
 store.dispatch(actions.updateTemperature(-9));
-store.dispatch(actions.addIcecream(flavors.FABADA, 33));
+// store.dispatch(actions.addIcecream(flavors.FABADA, 33));
 
