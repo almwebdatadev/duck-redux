@@ -9,7 +9,7 @@ export const actionTypes = {
 export const MAX_AMOUNT_PER_ICECREAM = 70;
 
 const DEFAULT_STATE = {
-    temperature: null,
+    temperature: 0,
     icecreams: {
         [FLAVORS.CHOCOLATE]:10,
         [FLAVORS.VANILLA]:20,
