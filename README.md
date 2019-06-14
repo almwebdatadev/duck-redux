@@ -74,3 +74,5 @@ http://tinyurl.com/reactmadrid2 pass --> ***
 http://tinyurl.com/angularmad pass --> ***
 
 <!-- instalar paquete con --dev es solo para desarrollo -->
+
+proyecto base: https://github.com/ccampean/redux-in-motion
