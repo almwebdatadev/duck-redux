@@ -72,3 +72,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ////cursos
 http://tinyurl.com/reactmadrid2 pass --> ***
 http://tinyurl.com/angularmad pass --> ***
+
+<!-- instalar paquete con --dev es solo para desarrollo -->
